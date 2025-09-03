@@ -34,11 +34,6 @@ openai_client = AzureOpenAI(
     azure_endpoint=AZURE_OPENAI_ENDPOINT
 )
 
-#openai_client = OpenAI(api_type="azure",
-#                api_key=AZURE_OPENAI_API_KEY,
-#                api_base=AZURE_OPENAI_ENDPOINT,
-#                api_version="2023-07-01-preview")  # or your deployed version
-
 # Initialize Azure Search client
 search_client = SearchClient(endpoint=SEARCH_ENDPOINT,
                              index_name=SEARCH_INDEX_NAME,
